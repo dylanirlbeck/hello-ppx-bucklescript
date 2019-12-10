@@ -1,0 +1,22 @@
+{
+  "name": "hello-ppx-bucklescript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "bsb -make-world -backend native",
+    "js": "bsb -make-world -backend js",
+    "postinstall": "bsb -make-world -backend js; cp lib/bs/js/hello.native ./ppx",
+    "clean": "bsb -clean-world",
+    "watch": "bsb -make-world -backend native -w",
+    "test": "node ./lib/js/tests/Tests.js"
+  },
+  "keywords": [
+    "Reason"
+  ],
+  "description": "TEST description.",
+  "author": "Dylan Irlbeck",
+  "license": "MIT",
+  "dependencies": {
+    "bs-platform": "bsansouci/bsb-native#3.2.0"
+  }
+}

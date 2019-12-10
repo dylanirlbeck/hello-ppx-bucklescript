@@ -1,0 +1,22 @@
+{
+  "name": "hello_ppx",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "bsb -make-world -backend native; cp lib/bs/native/hello.native ./ppx",
+    "clean": "bsb -clean-world"
+  },
+  "keywords": [
+    "Reason",
+    "BuckleScript"
+  ],
+  "repository": {
+    "url": "dylanirlbeck/hello-ppx-bucklescript",
+    "type": "git"
+  },
+  "description": "Example ppx project using BuckleScript",
+  "author": "Dylan Irlbeck",
+  "license": "ISC",
+  "dependencies": {
+    "bs-platform": "bsansouci/bsb-native#3.2.0"
+  }
+}
