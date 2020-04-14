@@ -38,5 +38,3 @@ and adding the ppx flag to their bsconfig.json
 As the documentation of bsconfig.json says, ppx flags are specified by package_name/binary, which allows BuckleScript to find each ppx in in your node_modules (this also explains why we `npm i` each ppx). Thus, the most important part of this process is the generated binary for the ppx that is consumed by other developers. In our case, this binary is located at `publish/ppx`.
 
 If you've never published on NPM before, I'd highly recommend checking out [this tutorial](https://eladnava.com/publishing-your-first-package-to-npm/).
-
-    "postinstall": "bsb -make-world -backend js; cp lib/bs/js/hello.native ./ppx",
