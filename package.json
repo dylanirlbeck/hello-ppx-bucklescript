@@ -5,7 +5,6 @@
   "scripts": {
     "start": "bsb -make-world -backend native",
     "js": "bsb -make-world -backend js",
-    "postinstall": "bsb -make-world -backend js; cp lib/bs/js/hello.native ./ppx",
     "clean": "bsb -clean-world",
     "watch": "bsb -make-world -backend native -w",
     "test": "node ./lib/js/tests/Tests.js"
@@ -17,6 +16,6 @@
   "author": "Dylan Irlbeck",
   "license": "MIT",
   "dependencies": {
-    "bs-platform": "bsansouci/bsb-native#3.2.0"
+    "bsb-native": "4.0.1100"
   }
 }
