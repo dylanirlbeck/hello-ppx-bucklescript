@@ -1,5 +1,7 @@
 # hello-ppx-bucklescript
 
+> I recommend checking out [my article](https://dev.to/dylanirlbeck/intro-to-ppxs-for-reason-newcomers-2829) about the basics of Reason PPXs and `hello-ppx-bucklescript`!
+
 A project that includes the minimum configuration for a ppx called `hello`, using Reason and BuckleScript. Inspired by [hello-ppx-esy](https://github.com/jchavarri/hello-ppx-esy/).
 
 `hello-ppx-bucklescript` implements a very basic ppx that transforms the `[%hello]` extension into the number literal `42`.
