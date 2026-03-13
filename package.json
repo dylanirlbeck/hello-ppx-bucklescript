@@ -16,6 +16,6 @@
   "author": "Dylan Irlbeck",
   "license": "MIT",
   "dependencies": {
-    "bsb-native": "4.0.1100"
+    "bsb-native": "5.0.3"
   }
 }
